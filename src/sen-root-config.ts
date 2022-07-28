@@ -9,10 +9,12 @@ import microfrontendLayout from "./microfrontend-layout.html";
 const routes = constructRoutes(microfrontendLayout, {
   loaders: {
     topNav: "<h1>Loading topnav</h1>",
+    gallery:  "<h1>Loading gallery</h1>",
   },
   props: {},
   errors: {
     topNav: "<h1>Failed to load topnav</h1>",
+    gallery: "<h1>Failed to flex panel gallery</h1>",
   }
 });
 const applications = constructApplications({

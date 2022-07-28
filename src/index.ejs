@@ -47,6 +47,7 @@
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
+
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
@@ -56,7 +57,10 @@
       "imports": {
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@sen/root-config": "//localhost:9000/sen-root-config.js",
-        "@react-mf/navbar": "//localhost:8080/react-mf-navbar.js"
+        "@react-mf/navbar": "//localhost:8080/react-mf-navbar.js",
+        "@footer": "https://scherlock90.github.io/micro-test/react-mf-footer.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.development.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.development.js"
       }
     }
   </script>
@@ -86,6 +90,7 @@
   <script>
     System.import('@sen/root-config');
     System.import('@react-mf/navbar');
+    System.import('@footer');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
